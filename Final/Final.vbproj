@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5A775B0-FB87-4D91-A64F-CECD21135C10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Final.My.MyApplication</StartupObject>
+    <RootNamespace>Final</RootNamespace>
+    <AssemblyName>Final</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAgrupaciones.Designer.vb">
+      <DependentUpon>frmAgrupaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgrupaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticulos.Designer.vb">
+      <DependentUpon>frmArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarAgrup.Designer.vb">
+      <DependentUpon>frmBuscarAgrup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarAgrup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarArticulo.Designer.vb">
+      <DependentUpon>frmBuscarArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarMovimiento.Designer.vb">
+      <DependentUpon>frmBuscarMovimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarMovimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarTipoMov.Designer.vb">
+      <DependentUpon>frmBuscarTipoMov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarTipoMov.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInforme.Designer.vb">
+      <DependentUpon>frmInforme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInforme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.vb">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientos.Designer.vb">
+      <DependentUpon>frmMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoMov.Designer.vb">
+      <DependentUpon>frmTipoMov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoMov.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Verificacion.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAgrupaciones.resx">
+      <DependentUpon>frmAgrupaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticulos.resx">
+      <DependentUpon>frmArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarAgrup.resx">
+      <DependentUpon>frmBuscarAgrup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarArticulo.resx">
+      <DependentUpon>frmBuscarArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarMovimiento.resx">
+      <DependentUpon>frmBuscarMovimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarTipoMov.resx">
+      <DependentUpon>frmBuscarTipoMov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInforme.resx">
+      <DependentUpon>frmInforme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientos.resx">
+      <DependentUpon>frmMovimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoMov.resx">
+      <DependentUpon>frmTipoMov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\tornillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\transaccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\es.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\agrupacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\informe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\informe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\informe3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\menospng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\limpoiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\modificar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Iconos\lupa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
