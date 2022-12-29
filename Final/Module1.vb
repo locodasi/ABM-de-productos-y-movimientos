@@ -6,7 +6,7 @@ Module Module1
 
     Sub conectarBase()
         On Error GoTo errores
-        Dim servidor As String = "Ingrese el dds"
+        Dim servidor As String = "Ingrese el dns"
         Dim base As String = "Ingrese contraseña de la BD"
         daoCon = New SqlConnection("server=" & servidor & ";database=" & base & ";User ID=sa;Password=Ingrese contraseña del usuario")
         daoCon.Open()
